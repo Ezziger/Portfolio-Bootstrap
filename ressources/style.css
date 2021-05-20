@@ -24,7 +24,7 @@ html {
 h1, h2, h3, h4 {
     text-transform: uppercase;
     color: rgba(0, 0, 0, 1);
-    font-family: 'Lato', 'Arial', sans-serif;;
+    font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 700;
 
 }
@@ -81,6 +81,8 @@ header {
     height: 100%;
 }
 
+/* COMPETENCES */
+
 .skill-box {
     width: 25%;
     border-radius: 20px;
@@ -98,6 +100,90 @@ header {
     padding: 5px;
 }
 
+.hover-html:hover {
+    color: red;
+    transform: scale(1.3);
+}
+
+.hover-css:hover {
+    color: blue;
+    transform: scale(1.3);
+}
+
+.hover-javascript:hover {
+    color: yellow;
+    transform: scale(1.3);
+}
+
+.hover-bootstrap:hover {
+    color: rgb(100, 26, 100);
+    transform: scale(1.3);
+}
+
+/* PORTFOLIO */
+
+.portfolio-row {
+    margin: 30px 0;
+}
+
 .portfolio-box img{
     width: 100%;
+}
+
+.portfolio-box img:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+
+/* CONTACT */
+
+form {
+    text-align: center;
+}
+
+label {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 700;
+}
+
+input {
+    width: 483px;
+}
+
+/* FOOTER */
+
+footer {
+
+    background: linear-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(218, 117, 155, 0.932));
+    height: 200px;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 200px;
+}
+
+footer p {
+    align-self: center;
+}
+
+.social-media {
+    align-self: center;
+}
+
+.social-media i {
+    margin: 0 5px;
+    transition: transform 1s ease-in-out;
+}
+
+.social-media i:hover {
+    transform: rotate(360deg);
+    color: #56b2f0;
 }
