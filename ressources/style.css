@@ -16,7 +16,11 @@ html {
 .col-md-4 {
     padding: 0;
     text-align: center;
-    margin: 10px 0;
+    margin: 10px 0 25px 0;
+}
+
+.col-md-6 {
+    padding: 0;
 }
 
 h1, h2, h3, h4, h5 {
@@ -25,6 +29,10 @@ h1, h2, h3, h4, h5 {
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 700;
 
+}
+
+h1 {
+    font-size: 300%;
 }
 
 h2 {
@@ -52,7 +60,8 @@ h3 {
 }
 
 h5 {
-    font-size: 70%;
+    font-size: 90%;
+    margin: 0;
 }
 
 
@@ -70,22 +79,38 @@ header {
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-    opacity: 0.;
+    opacity: 0.9;
 }
 
 .header-title {
     position: absolute;
-    top: 70vh;
-    left: 24vw;
+    bottom: 5vh;
+    left: 26vw;
     width: 50vw;
     color: white;
     text-align: center;
 }
 
+.separation::before {
+    display: block;
+    height: 4px;
+    width: 100vw;
+    background: linear-gradient(
+      to right,
+    rgba(218, 117, 155, 0.932),
+    rgba(255, 255, 255, 1));
+    content: " ";
+}
+
 .chemin {
-    height: 100vh;
+    width: 50vw;
     margin: 0;
     padding: 0;
+}
+
+.col-md-6 p {
+    margin: 23vh 100px;
+    text-align: justify;
 }
 
 .chemin img {
@@ -135,7 +160,7 @@ header {
 /* PORTFOLIO */
 
 .portfolio-row {
-    margin: 5px 0;
+    margin: 5px 150px;
 }
 
 .portfolio-box{
@@ -147,12 +172,13 @@ header {
     margin-bottom: 10px;
 }
 
-.portfolio-box img:hover{
+.portfolio-box:hover{
     transform: scale(1.1);
     opacity: 0.8;
     filter: brightness(50%);
     -webkit-filter: brightness(50%);
 }
+
 
 /* CONTACT */
 
@@ -194,7 +220,7 @@ button {
     color: white;
     font-weight: 700;
     background: transparent;
-    transition: 1s ease-in-out;
+    transition: color 1s ease-in-out;
 }
 
 button:hover{
