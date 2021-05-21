@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="ressources/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
@@ -15,17 +17,16 @@
     <header>
         <!--Navbar-->
         <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="">Geay Steven</a>
+            <div class="container">                
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                       
+                <a class="navbar-brand" href="">Geay Steven</a>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <div class="navbar-nav ms-auto"> <!--Pourquoi margin start ???-->
                         <a class="nav-item nav-link" href="#who">Qui suis-je ?</a>
-                        <a class="nav-item nav-link" href="#nosproduits">Compétences</a>
-                        <a class="nav-item nav-link" href="#photos">Portfolio</a>
+                        <a class="nav-item nav-link" href="#mescompetences">Compétences</a>
+                        <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
                         <a class="nav-item nav-link" href="#contact">Contact</a>
                     </div>
                 </div>
@@ -35,8 +36,9 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 header-title">
-                    <h5>Une solution adaptée pour chacun</h5>
                     <h1>Geay Steven</h1>
+                    <h5>Une solution adaptée pour chacun</h5>
+                    
                     <h4>Developpeur web et web mobile</h2>
                     
                 </div>
@@ -45,7 +47,7 @@
         </div>
     </header>
     <main>
-        <div class="container-fluid separation">
+        <div class="container-fluid separation " id="who">
             <div class="row">
                 <div class="col-md-6">
                     <h2>Qui suis-je ?</h2>
@@ -56,7 +58,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid separation">
+        <div class="container-fluid separation" id="mescompetences">
             <div class="row">
                 <div class="col-md-12">
                     <h2>Mes Compétences</h2>
@@ -108,7 +110,7 @@
                 </div>                         
             </div>
         </div>
-        <div class="container-fluid separation">
+        <div class="container-fluid separation" id="portfolio">
             <div class="row">
                 <div class="col-md-12">
                     <h2>Portfolio</h2>
@@ -119,7 +121,6 @@
                     <a href="https://ezziger.github.io/TravelBlog.com/" target="_blank">
                         <img src="ressources/images/TravelBlog.jpg" alt="">
                     </a>
-                    <h4 class= "titre-projet-image">TravelBlog</h4>
                 </div>
                 <div class="col-md-3 portfolio-box">
                     <a href="https://ezziger.github.io/KomeWaza/" target="_blank">
@@ -150,7 +151,7 @@
                 </div>                     
             </div>
         </div>
-        <div class="container-fluid separation">
+        <div class="container-fluid separation" id="contact">
             <div class="row">
                 <div class="col-md-12">
                     <h2>Contact</h2>
@@ -208,5 +209,7 @@
             </div>
         </div>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
